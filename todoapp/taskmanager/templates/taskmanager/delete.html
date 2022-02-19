@@ -1,0 +1,16 @@
+{% extends 'taskmanager/main.html' %}
+
+{% block content %}
+
+<div class="center-column">
+    <p>Are you sure you want to delete "{{task}}"?</p>
+    
+    <form method="POST" action="">
+        {% csrf_token %}
+    
+        <input type="submit" name="Confirm" value="Confirm">
+    </form>
+    <a class="btn btn-sm btn-info" href="{% url 'list' %}">Cancel</a></td>
+</div>
+
+{% endblock %}

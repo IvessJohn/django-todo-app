@@ -1,0 +1,23 @@
+{% extends 'taskmanager/main.html' %}
+
+{% block content %}
+
+<div class="center-column">
+    <h3><center>About</center></h3>
+    <div>
+        <pre>This To-Do web application is a small project developed by John Ivess.</pre>
+
+        <h4>Tools Used</h4>
+        <p>Django</p>
+        <p>Python</p>
+        <p>HTML</pp>
+            
+        <h4>Additional Tools</h4>
+        <p>CSS</p>
+        <p>jQuery</p>
+        
+        <center><a class="btn btn-sm btn-info" href="{% url 'list' %}">Back</a></td></center>
+    </div>
+</div>
+
+{% endblock %}

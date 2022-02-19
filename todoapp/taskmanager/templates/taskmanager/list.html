@@ -1,0 +1,38 @@
+{% extends 'taskmanager/main.html' %}
+
+{% block content %}
+
+<div class="center-column">
+    <h1><center>John Ivess's To-Do List</center></h1>
+    <form method="POST" action="/">
+        {% csrf_token %}
+        {{taskform.title}}
+        <input class="btn btn-info" type="submit" value="Add Task">
+    </form>
+
+    <br />
+    <h3><center>To Do:</center></h3>
+    <div>
+        {% for task in tasks %}
+            {% if task.completed %}
+            <div class="item-row-complete">
+            {% else %}
+            <div class="item-row-incomplete">
+            {% endif %}
+
+                {% if task.completed == True %}
+                <strike>{{task.title}}</strike>
+                {% else %}
+                <span>{{task.title}}</span>
+                {% endif %}
+                
+                <span class="tab"></span>
+                <a class="btn btn-sm btn-info" href="{% url 'task' task.id %}">Update</a>
+                <a class="btn btn-sm btn-danger" href="{% url 'delete_task' task.id %}">Delete</a>
+            </div>
+        {% endfor%}
+    </div>
+</div>
+<center><a class="btn btn-sm btn-info" href="{% url 'about' %}">About page</a></td></center>
+
+{% endblock %}
