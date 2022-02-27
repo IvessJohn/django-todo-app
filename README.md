@@ -6,6 +6,8 @@
 - Updating task status and title
 - Removing tasks
 
+## Demo
+
 ![Demo GIF](publicity/demo.gif)
 
 _*You can see more demo materials in [publicity/](publicity/) directory_
