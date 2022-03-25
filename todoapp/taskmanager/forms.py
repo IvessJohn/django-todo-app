@@ -5,8 +5,12 @@ from .models import *
 
 
 class TaskForm(forms.ModelForm):
-    title = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Add a new task...'}))
+    """A form for quickly creating new tasks."""
+
+    title: forms.CharField = forms.CharField(
+        widget=forms.TextInput(attrs={"placeholder": "Add a new task..."})
+    )
 
     class Meta:
         model = Task
-        fields = ['title', 'completed']
+        fields = ["title", "completed"]
