@@ -1,3 +1,5 @@
 /Access point.txt
-todoapp/todoapp/settings.py
+todoapp/settings.py
 .vscode
+*pyc
+*__pycache__
