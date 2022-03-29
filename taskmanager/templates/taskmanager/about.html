@@ -1,20 +1,26 @@
 {% extends 'taskmanager/main.html' %} {% block content %}
 
 <div class="center-column">
-    <h3>
+    <h2>
         <center>About</center>
-    </h3>
+    </h2>
     <div>
-        <pre>This To-Do web application is a small project developed by John Ivess.</pre>
+        <p>This To-Do web application was developed by <a href="https://twitter.com/ivess_john">John Ivess</a> as a part of his project-based learning mode.</p>
+
+        <h3>To-Do app links:</h3>
+        <ul>
+            <li><a href="https://ivess-simpletodolist.herokuapp.com/">To-Do app website</a> (hosted by Heroku)</li>
+            <li><a href="https://github.com/IvessJohn/django-todo-app">Github Repository</a></li>
+        </ul>
+
+        <hr>
 
         <h4>Tools Used</h4>
-        <p>Django</p>
-        <p>Python</p>
-        <p>HTML</p>
+        <pre>Django<br>Python<br>HTML</br>
+        </pre>
 
-        <h4>Additional Tools</h4>
-        <p>CSS</p>
-        <p>jQuery</p>
+        <h4>Additional Tools and integrations:</h4>
+        <pre>jQuery</pre>
 
         <center><a class="btn btn-sm btn-info" href="{% url 'list' %}">Back</a></td>
         </center>
