@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-_k3kvx27v-om6a0i$2dh9+aek1uzv0zrv#k&15-4o3_155#bf-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ivess-simpletodolist.herokuapp.com/', '127.0.0.1']
+ALLOWED_HOSTS = ['*', '127.0.0.1']
 
 
 # Application definition
