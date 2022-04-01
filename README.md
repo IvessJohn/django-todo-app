@@ -3,6 +3,7 @@
 
 #### Check it out:
 [To-do List Website](https://ivess-simpletodolist.herokuapp.com/) (powered by Heroku)
+
 [To-do List on GitHub](https://github.com/IvessJohn/django-todo-app) (this page)
 
 ## Functionality:
