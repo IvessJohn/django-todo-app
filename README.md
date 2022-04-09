@@ -6,16 +6,16 @@
 
 [To-do List on GitHub](https://github.com/IvessJohn/django-todo-app) (this page)
 
+## Demo
+
+[![Demo GIF](publicity/demo.gif)](https://ivess-simpletodolist.herokuapp.com/)
+
+_*You can see more demo materials in [publicity/](publicity/) directory_
+
 ## Functionality:
 - Adding tasks
 - Updating task status and title
 - Removing tasks
-
-## Demo
-
-![Demo GIF](publicity/demo.gif)
-
-_*You can see more demo materials in [publicity/](publicity/) directory_
 
 ---
 **Used tools**: Django, Python.
